@@ -1,4 +1,4 @@
-package com.nadarzy.springdevops.config;
+package com.nadarzy.springdevops.test.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

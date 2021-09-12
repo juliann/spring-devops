@@ -1,4 +1,4 @@
-package com.nadarzy.springdevops.props;
+package com.nadarzy.springdevops.test.props;
 
 import com.nadarzy.springdevops.test.jms.FakeJmsBroker;
 import org.springframework.beans.factory.annotation.Value;

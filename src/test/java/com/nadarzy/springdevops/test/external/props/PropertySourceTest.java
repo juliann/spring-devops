@@ -1,8 +1,7 @@
 package com.nadarzy.springdevops.test.external.props;
 
-import com.nadarzy.springdevops.props.ExternalPropsPropertySourceTestConfig;
 import com.nadarzy.springdevops.test.jms.FakeJmsBroker;
-import org.junit.jupiter.api.BeforeEach;
+import com.nadarzy.springdevops.test.props.ExternalPropsPropertySourceTestConfig;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
