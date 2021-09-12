@@ -1,0 +1,7 @@
+
+CREATE USER 'springdevops'@'localhost' IDENTIFIED BY 'Pa$$w0rd';
+
+GRANT SELECT ON spring_db_dev.* to 'springdevops'@'localhost';
+GRANT INSERT ON spring_db_dev.* to 'springdevops'@'localhost';
+GRANT DELETE ON spring_db_dev.* to 'springdevops'@'localhost';
+GRANT UPDATE ON spring_db_dev.* to 'springdevops'@'localhost';

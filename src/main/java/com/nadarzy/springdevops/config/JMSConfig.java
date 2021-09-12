@@ -1,4 +1,4 @@
-package com.nadarzy.springdevops.test.config;
+package com.nadarzy.springdevops.config;
 
 import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.context.annotation.Bean;

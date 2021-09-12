@@ -6,6 +6,7 @@ import com.nadarzy.springdevops.domain.ProductCategory;
 import com.nadarzy.springdevops.repositories.AuthorRepository;
 import com.nadarzy.springdevops.repositories.ProductCategoryRepository;
 import com.nadarzy.springdevops.repositories.ProductRepository;
+import org.apache.commons.collections4.IteratorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -37,6 +38,13 @@ public class DevOpsBootstrap implements ApplicationListener<ContextRefreshedEven
 
   @Override
   public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
+    if(IteratorUtils.toList(authorRepository.findAll().iterator()).size()==0){
+      loadContent();
+    }
+
+  }
+
+  private void loadContent() {
     Author jt = new Author();
     jt.setFirstName("John");
     jt.setLastName("Thompson");

@@ -1,6 +1,6 @@
 package com.nadarzy.springdevops.test.dstest;
 
-import com.nadarzy.springdevops.test.config.DataSourceConfig;
+import com.nadarzy.springdevops.config.DataSourceConfig;
 import com.nadarzy.springdevops.test.ds.FakeDataSource;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
