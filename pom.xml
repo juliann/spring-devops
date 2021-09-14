@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.nadarzy</groupId>
     <artifactId>spring-devops</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>spring-devops</name>
     <description>spring-devops</description>
     <properties>
@@ -106,5 +106,16 @@
 
 
     </build>
-
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>juna-artifactory-primary-0-releases</name>
+            <url>https://juna.jfrog.io/artifactory/default-maven-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>juna-artifactory-primary-0-snapshots</name>
+            <url>https://juna.jfrog.io/artifactory/default-maven-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
