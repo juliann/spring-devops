@@ -30,7 +30,7 @@ public class ProductServiceImpl implements ProductService {
     jmsTextMessageService.sendTextMessage("Fetching Product ID: " + id);
     return productRepository
         .findById(id)
-        .orElseThrow(
+        .<RuntimeException>orElseThrow(
             () -> {
               throw new RuntimeException("no product with id " + id + " found");
             });
